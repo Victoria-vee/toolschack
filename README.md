@@ -165,7 +165,7 @@ The following environment variables are required:
 * `DATABASE_URI` — MongoDB connection string
 * `JWT_SECRET` — Secret used to sign JWT tokens
 
-Do not commit your `.env` file or expose your environment variables publicly.
+#### Do not commit your `.env` file or expose your environment variables publicly. Make sure to add them to .gitignore
 
 
 ## Author
