@@ -4,7 +4,6 @@ import { Types } from 'mongoose';
 import { BadRequestError, AppError } from '../error';
 import { IJwtPayload, AuthenticatedRequest } from './types';
 
-const JWT_SECRET = process.env.JWT_SECRET;
 
 class UnauthorizedError extends AppError {
   constructor(message: string = 'Access denied. Invalid or missing token.') {

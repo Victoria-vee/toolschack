@@ -2,11 +2,11 @@ import { Router, Request, Response, NextFunction } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { User } from './models';
-import { validateBody } from './middleware';
+import { validateBody } from './user.middleware';
 import { BadRequestError} from '../error';
 
 const router = Router();
-const JWT_SECRET = process.env.JWT_SECRET;
+
 
 interface RegisterInput { username: string; email: string; password: string; }
 interface LoginInput { email: string; password: string; }
@@ -42,7 +42,7 @@ router.post('/login', validateBody<LoginInput>(['email', 'password']), async (re
 
     const token = jwt.sign(
       { userId: user._id.toString(), email: user.email },
-      JWT_SECRET!,
+      process.env.JWT_SECRET!,
       { expiresIn: '24h' }
     );
 

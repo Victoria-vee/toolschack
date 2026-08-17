@@ -1,0 +1,158 @@
+### Register a new user
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "Victoria",
+  "email": "test1@example.com",
+  "password": "Password123!"
+}
+
+### Register another new user
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "Michael",
+  "email": "test2@example.com",
+  "password": "Password123!"
+}
+
+### Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test2@example.com",
+  "password": "Password123!"
+}
+
+### Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test1@example.com",
+  "password": "Password123!"
+}
+
+
+### Submit a new AI tool
+POST http://localhost:5000/tools
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+Content-Type: application/json
+
+{
+  "name": "ChatGPT",
+  "description": "AI assistant for writing, research and coding",
+  "category": "Productivity",
+  "link": "https://chatgpt.com"
+}
+
+### Submit a new users AI tool
+POST http://localhost:5000/tools
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyYzYwMWUyZWUyODEwNWVhYTA5MzgiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTU1MjcwLCJleHAiOjE3ODcwNDE2NzB9.ItI7Ndkeyz8imttt-AunyO82q_JFYEWEy3Z_W30biNA
+Content-Type: application/json
+
+{
+  "name": "MidJourney",
+  "description": "AI assistant for writing, research and coding",
+  "category": "Organisation",
+  "link": "https://midjourney.com"
+}
+
+### Submit a new users AI tool
+POST http://localhost:5000/tools
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyYzYwMWUyZWUyODEwNWVhYTA5MzgiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTU1MjcwLCJleHAiOjE3ODcwNDE2NzB9.ItI7Ndkeyz8imttt-AunyO82q_JFYEWEy3Z_W30biNA
+Content-Type: application/json
+
+{
+  "name": "Meta AI",
+  "description": "AI assistant for writing, research and coding",
+  "category": "Productivity",
+  "link": "https://meta.ai"
+}
+
+### Submit a new users AI tool
+POST http://localhost:5000/tools
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyYzYwMWUyZWUyODEwNWVhYTA5MzgiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTU1MjcwLCJleHAiOjE3ODcwNDE2NzB9.ItI7Ndkeyz8imttt-AunyO82q_JFYEWEy3Z_W30biNA
+Content-Type: application/json
+
+{
+  "name": "ChatGPT",
+  "description": "AI assistant for writing, research and coding",
+  "category": "Productivity",
+  "link": "https://chatgpt.com"
+}
+
+
+### Submit another AI tool
+POST http://localhost:5000/tools
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+Content-Type: application/json
+
+{
+  "name": "Claude",
+  "description": "AI assistant for writing, research and coding",
+  "category": "Productivity",
+  "link": "https://claude.ai"
+}
+
+### Submit another AI tool
+POST http://localhost:5000/tools
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+Content-Type: application/json
+
+{
+  "name": "Grammarly",
+  "description": "AI assistant for writing, research and coding",
+  "category": "Writing",
+  "link": "https://grammarly.com"
+}
+
+### Submit another AI tool
+POST http://localhost:5000/tools
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+Content-Type: application/json
+
+{
+  "name": "Notion AI",
+  "description": "AI assistant for writing, research and coding",
+  "category": "Productivity",
+  "link": "https://notion.ai"
+}
+
+
+### Upvote a tool
+POST http://localhost:5000/tools/6a82c710e2ee28105eaa0939/upvote
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+
+### Upvote a tool
+POST http://localhost:5000/tools/6a82c2491698e14fe99d3d07/upvote
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+
+### Upvote a tool
+POST http://localhost:5000/tools/6a82c2491698e14fe99d3d07/upvote
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyYzYwMWUyZWUyODEwNWVhYTA5MzgiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTU1MjcwLCJleHAiOjE3ODcwNDE2NzB9.ItI7Ndkeyz8imttt-AunyO82q_JFYEWEy3Z_W30biNA
+
+### Upvote a tool
+POST http://localhost:5000/tools/6a82c715e2ee28105eaa093a/upvote
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyYzYwMWUyZWUyODEwNWVhYTA5MzgiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTU1MjcwLCJleHAiOjE3ODcwNDE2NzB9.ItI7Ndkeyz8imttt-AunyO82q_JFYEWEy3Z_W30biNA
+
+
+### Delete a tool
+DELETE http://localhost:5000/tools/6a8208030130965622ae5d96
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+
+### Get all tools
+GET http://localhost:5000/tools
+
+### Get popular tools
+GET http://localhost:5000/tools/popular
+
+### Get related tools
+GET http://localhost:5000/tools/6a82c1cd1698e14fe99d3d06/related
+
+
+### Test server
+GET http://localhost:5000/test
