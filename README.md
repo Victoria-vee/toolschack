@@ -44,7 +44,7 @@ Clone the repository:
 git clone https://github.com/Victoria-vee/toolschack.git
 cd toolschack
 ```
-#### NOTE: Make sure you are on the deploy branch
+#### NOTE: Make sure you are on the develop branch
 
 Install dependencies:
 
