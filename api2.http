@@ -1,0 +1,57 @@
+### Register a new user
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "Favour",
+  "email": "test4@example.com",
+  "password": "Password123!"
+}
+
+### Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test4@example.com",
+  "password": "Password123!"
+}
+
+### Submit a new AI tool
+POST http://localhost:5000/tools
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMjllOTBkZjA3ZjdkNDE5NTI3MWQiLCJlbWFpbCI6InRlc3Q0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTgwODQ3LCJleHAiOjE3ODcwNjcyNDd9.yfLTf_8aGx180z3maKUIX8gHa9WCjYhidz9QXETLbM4
+Content-Type: application/json
+
+{
+"name": "Perplexity",
+"description": "AI-powered search and research assistant that provides answers with sources.",
+"category": "Research",
+"link": "https://www.perplexity.ai"
+}
+
+### Submit a new AI tool
+POST http://localhost:5000/tools
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMjllOTBkZjA3ZjdkNDE5NTI3MWQiLCJlbWFpbCI6InRlc3Q0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTgwODQ3LCJleHAiOjE3ODcwNjcyNDd9.yfLTf_8aGx180z3maKUIX8gHa9WCjYhidz9QXETLbM4
+Content-Type: application/json
+
+{
+"name": "NotebookLM",
+"description": "AI research and note-taking tool that works with uploaded documents and sources.",
+"category": "Research",
+"link": "https://notebooklm.google.com"
+}
+
+### Submit a new AI tool
+POST http://localhost:5000/tools
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMjllOTBkZjA3ZjdkNDE5NTI3MWQiLCJlbWFpbCI6InRlc3Q0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTgwODQ3LCJleHAiOjE3ODcwNjcyNDd9.yfLTf_8aGx180z3maKUIX8gHa9WCjYhidz9QXETLbM4
+Content-Type: application/json
+
+{
+"name": "Cursor",
+"description": "AI-powered code editor that helps developers write, understand, and modify code.",
+"category": "Coding",
+"link": "https://www.cursor.com"
+}
+
+### Get all tools
+GET http://localhost:5000/tools

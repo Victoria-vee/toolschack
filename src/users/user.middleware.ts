@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { Types } from 'mongoose';
 import { BadRequestError, AppError } from '../error';
-import { IJwtPayload, AuthenticatedRequest } from './types';
+import { IJwtPayload, AuthenticatedRequest } from './user.types';
 
 
 class UnauthorizedError extends AppError {
@@ -57,12 +57,6 @@ export function validateBody<T>(requiredFields: (keyof T)[]) {
     for (const field of requiredFields) {
       if (!body || body[field] === undefined || body[field] === null) {
         missingFields.push(String(field));
-      }
-    }
-
-    if (requiredFields.includes('category' as keyof T) && body && (body as any).category) {
-      if (!(body as any).category.name) {
-        missingFields.push('category.name');
       }
     }
 

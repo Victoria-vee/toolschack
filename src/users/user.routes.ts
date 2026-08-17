@@ -1,7 +1,7 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { User } from './models';
+import { User } from './user.model';
 import { validateBody } from './user.middleware';
 import { BadRequestError} from '../error';
 
@@ -11,20 +11,20 @@ const router = Router();
 interface RegisterInput { username: string; email: string; password: string; }
 interface LoginInput { email: string; password: string; }
 
-router.post('/register', validateBody<RegisterInput>(['email', 'password']), async (req: Request<{}, {}, RegisterInput>, res: Response, next: NextFunction) => {
+router.post('/register', validateBody<RegisterInput>(['username', 'email', 'password']), async (req: Request<{}, {}, RegisterInput>, res: Response, next: NextFunction) => {
   try {
     const { username, email, password } = req.body;
 
     const userExists = await User.exists({ $or: [{ email }] });
     if (userExists) {
-      throw new BadRequestError('Email credentials already exists');
+      throw new BadRequestError('Email already exists');
     }
   
     const passwordHash = await bcrypt.hash(password, 10);
-    const newUser = new User({email, passwordHash });
+    const newUser = new User({username, email, passwordHash });
     await newUser.save();
 
-    res.status(201).json({ message: 'Account created successfully', userId: newUser._id });
+    res.status(201).json({ message: 'Account created successfully', userToken: newUser._id });
   } catch (error) {
     next(error);
   }
@@ -46,7 +46,7 @@ router.post('/login', validateBody<LoginInput>(['email', 'password']), async (re
       { expiresIn: '24h' }
     );
 
-    res.status(200).json({ token, message: "Login successful! Welcome to Stash!" });
+    res.status(200).json({ token, message: "Login successful! Welcome to GoodTools!" });
   } catch (error) {
     next(error);
   }

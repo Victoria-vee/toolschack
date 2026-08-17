@@ -39,7 +39,7 @@ Content-Type: application/json
 
 ### Submit a new AI tool
 POST http://localhost:5000/tools
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyZWI0NDliYTI5Njc2ZDRiNTEiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTg0MjI2LCJleHAiOjE3ODcwNzA2MjZ9.-nWDXqhvFhpscP82rV-X2CBSWL2-B5zAzGaMu9tZaEk
 Content-Type: application/json
 
 {
@@ -51,7 +51,7 @@ Content-Type: application/json
 
 ### Submit a new users AI tool
 POST http://localhost:5000/tools
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyYzYwMWUyZWUyODEwNWVhYTA5MzgiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTU1MjcwLCJleHAiOjE3ODcwNDE2NzB9.ItI7Ndkeyz8imttt-AunyO82q_JFYEWEy3Z_W30biNA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyZWI0NDliYTI5Njc2ZDRiNTEiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTg0MjI2LCJleHAiOjE3ODcwNzA2MjZ9.-nWDXqhvFhpscP82rV-X2CBSWL2-B5zAzGaMu9tZaEk
 Content-Type: application/json
 
 {
@@ -63,7 +63,7 @@ Content-Type: application/json
 
 ### Submit a new users AI tool
 POST http://localhost:5000/tools
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyYzYwMWUyZWUyODEwNWVhYTA5MzgiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTU1MjcwLCJleHAiOjE3ODcwNDE2NzB9.ItI7Ndkeyz8imttt-AunyO82q_JFYEWEy3Z_W30biNA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyZWI0NDliYTI5Njc2ZDRiNTEiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTg0MjI2LCJleHAiOjE3ODcwNzA2MjZ9.-nWDXqhvFhpscP82rV-X2CBSWL2-B5zAzGaMu9tZaEk
 Content-Type: application/json
 
 {
@@ -73,22 +73,9 @@ Content-Type: application/json
   "link": "https://meta.ai"
 }
 
-### Submit a new users AI tool
-POST http://localhost:5000/tools
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyYzYwMWUyZWUyODEwNWVhYTA5MzgiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTU1MjcwLCJleHAiOjE3ODcwNDE2NzB9.ItI7Ndkeyz8imttt-AunyO82q_JFYEWEy3Z_W30biNA
-Content-Type: application/json
-
-{
-  "name": "ChatGPT",
-  "description": "AI assistant for writing, research and coding",
-  "category": "Productivity",
-  "link": "https://chatgpt.com"
-}
-
-
 ### Submit another AI tool
 POST http://localhost:5000/tools
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyNWI0NDliYTI5Njc2ZDRiNTAiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTgzNzg2LCJleHAiOjE3ODcwNzAxODZ9.dQwbLMDZJIsIR1mhCKvv6s-rln1_SaBgkACrx-JJ8Fw
 Content-Type: application/json
 
 {
@@ -100,7 +87,7 @@ Content-Type: application/json
 
 ### Submit another AI tool
 POST http://localhost:5000/tools
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyZWI0NDliYTI5Njc2ZDRiNTEiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTg0MjI2LCJleHAiOjE3ODcwNzA2MjZ9.-nWDXqhvFhpscP82rV-X2CBSWL2-B5zAzGaMu9tZaEk
 Content-Type: application/json
 
 {
@@ -112,7 +99,7 @@ Content-Type: application/json
 
 ### Submit another AI tool
 POST http://localhost:5000/tools
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyNWI0NDliYTI5Njc2ZDRiNTAiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTgzNzg2LCJleHAiOjE3ODcwNzAxODZ9.dQwbLMDZJIsIR1mhCKvv6s-rln1_SaBgkACrx-JJ8Fw
 Content-Type: application/json
 
 {
@@ -124,25 +111,25 @@ Content-Type: application/json
 
 
 ### Upvote a tool
-POST http://localhost:5000/tools/6a82c710e2ee28105eaa0939/upvote
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+POST http://localhost:5000/tools/6a8344be6ecb1f05af5eb9d3/upvote
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyZWI0NDliYTI5Njc2ZDRiNTEiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTg0MjI2LCJleHAiOjE3ODcwNzA2MjZ9.-nWDXqhvFhpscP82rV-X2CBSWL2-B5zAzGaMu9tZaEk
 
 ### Upvote a tool
-POST http://localhost:5000/tools/6a82c2491698e14fe99d3d07/upvote
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+POST http://localhost:5000/tools/6a8344be6ecb1f05af5eb9d3/upvote
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyNWI0NDliYTI5Njc2ZDRiNTAiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTgzNzg2LCJleHAiOjE3ODcwNzAxODZ9.dQwbLMDZJIsIR1mhCKvv6s-rln1_SaBgkACrx-JJ8Fw
 
 ### Upvote a tool
-POST http://localhost:5000/tools/6a82c2491698e14fe99d3d07/upvote
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyYzYwMWUyZWUyODEwNWVhYTA5MzgiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTU1MjcwLCJleHAiOjE3ODcwNDE2NzB9.ItI7Ndkeyz8imttt-AunyO82q_JFYEWEy3Z_W30biNA
+POST http://localhost:5000/tools/6a8344bc6ecb1f05af5eb9d2/upvote
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyZWI0NDliYTI5Njc2ZDRiNTEiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTg0MjI2LCJleHAiOjE3ODcwNzA2MjZ9.-nWDXqhvFhpscP82rV-X2CBSWL2-B5zAzGaMu9tZaEk
 
 ### Upvote a tool
-POST http://localhost:5000/tools/6a82c715e2ee28105eaa093a/upvote
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyYzYwMWUyZWUyODEwNWVhYTA5MzgiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTU1MjcwLCJleHAiOjE3ODcwNDE2NzB9.ItI7Ndkeyz8imttt-AunyO82q_JFYEWEy3Z_W30biNA
+POST http://localhost:5000/tools/6a8344b76ecb1f05af5eb9d0/upvote
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyZWI0NDliYTI5Njc2ZDRiNTEiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTg0MjI2LCJleHAiOjE3ODcwNzA2MjZ9.-nWDXqhvFhpscP82rV-X2CBSWL2-B5zAzGaMu9tZaEk
 
 
 ### Delete a tool
 DELETE http://localhost:5000/tools/6a8208030130965622ae5d96
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgyMDYyZmJlNjcyZjk0MTk3MjI4MWUiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTA2NTYwLCJleHAiOjE3ODY5OTI5NjB9.UlgOqCpvTXXuJqZ3GTJ5D9hjsDwgW7wkEwJhP8QkcEo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyNWI0NDliYTI5Njc2ZDRiNTAiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTgzNzg2LCJleHAiOjE3ODcwNzAxODZ9.dQwbLMDZJIsIR1mhCKvv6s-rln1_SaBgkACrx-JJ8Fw
 
 ### Get all tools
 GET http://localhost:5000/tools
@@ -151,7 +138,29 @@ GET http://localhost:5000/tools
 GET http://localhost:5000/tools/popular
 
 ### Get related tools
-GET http://localhost:5000/tools/6a82c1cd1698e14fe99d3d06/related
+GET http://localhost:5000/tools/6a8344b76ecb1f05af5eb9d0/related
+
+
+### Add comment to a tool
+POST http://localhost:5000/tools/6a8344b76ecb1f05af5eb9d0/comments
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyNWI0NDliYTI5Njc2ZDRiNTAiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTgzNzg2LCJleHAiOjE3ODcwNzAxODZ9.dQwbLMDZJIsIR1mhCKvv6s-rln1_SaBgkACrx-JJ8Fw
+Content-Type: application/json
+
+{
+  "content": "I've been using this for coding and it's really helpful."
+}
+
+### Add another comment
+POST http://localhost:5000/tools/6a8344b76ecb1f05af5eb9d0/comments
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTgzMzUyNWI0NDliYTI5Njc2ZDRiNTAiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg2OTgzNzg2LCJleHAiOjE3ODcwNzAxODZ9.dQwbLMDZJIsIR1mhCKvv6s-rln1_SaBgkACrx-JJ8Fw
+Content-Type: application/json
+
+{
+  "content": "I especially like using this when I'm stuck on a difficult concept."
+}
+
+### Get all comments in a tool
+GET http://localhost:5000/tools/6a8344b76ecb1f05af5eb9d0/comments
 
 
 ### Test server
